@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 import CustomText from '../../../components/CustomText';
+import CustomButton from '../../../components/CustomButton';
 
 export default function Details({
   name,
@@ -8,6 +9,7 @@ export default function Details({
   farmName,
   description,
   price,
+  button,
 }) {
   return (
     <>
@@ -18,6 +20,9 @@ export default function Details({
       </View>
       <CustomText style={styles.description}>{description}</CustomText>
       <CustomText style={styles.price}>{price}</CustomText>
+      <CustomButton style={styles.button} onPress={() => {}}>
+        {button}
+      </CustomButton>
     </>
   );
 }
@@ -53,5 +58,8 @@ const styles = StyleSheet.create({
     fontSize: 26,
     lineHeight: 42,
     marginTop: 8,
+  },
+  button: {
+    marginTop: 16,
   },
 });
