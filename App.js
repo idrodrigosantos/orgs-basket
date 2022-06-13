@@ -7,6 +7,7 @@ import {
 } from '@expo-google-fonts/montserrat';
 import Basket from './src/screens/Basket';
 import mock from './src/mocks/basket';
+import AppLoading from 'expo-app-loading';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -15,7 +16,7 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return <View />;
+    return <AppLoading />;
   }
 
   return (
