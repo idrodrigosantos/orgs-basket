@@ -19,7 +19,7 @@ const basket = {
     button: 'Comprar',
   },
   items: {
-    title: 'Itens da cesta',
+    title: 'Itens da Cesta',
     list: [
       {
         name: 'Tomate',
