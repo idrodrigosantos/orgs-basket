@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Organic Basket",
-    "slug": "organic-basket",
+    "name": "Orgs Basket",
+    "slug": "orgs-basket",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
