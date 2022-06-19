@@ -2,6 +2,8 @@
 
 This project implements the organic products e-commerce basket details screen. This screen shows static data of basket name, farm, price and basket items.
 
+![demonstration](https://user-images.githubusercontent.com/23555768/174496450-c878124d-b847-485a-8c66-f50f634a3f2e.gif)
+
 ## Prerequisites
 
 * Source code editor
