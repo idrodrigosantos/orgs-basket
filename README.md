@@ -13,12 +13,15 @@ This project implements the organic products e-commerce basket details screen. T
 
 ### Install and Run
 
-```
+```bash
 # If haven't installed Expo previously. Install Expo globally
 npm install --global expo-cli
 
 # Clone project
 git clone https://github.com/idrodrigosantos/orgs-basket.git
+
+# Enter in directory
+cd orgs-basket
 
 # Install dependencies
 npm install
