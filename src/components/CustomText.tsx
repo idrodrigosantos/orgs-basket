@@ -1,7 +1,12 @@
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
-export default function CustomText({ children, style }) {
+interface CustomTextProps {
+  children: React.ReactNode;
+  style: any;
+}
+
+export const CustomText = ({ children, style }: CustomTextProps) => {
   let customStyle = styles.text;
 
   if (style?.fontWeight === 'bold') {
@@ -9,7 +14,7 @@ export default function CustomText({ children, style }) {
   }
 
   return <Text style={[style, customStyle]}>{children}</Text>;
-}
+};
 
 const styles = StyleSheet.create({
   text: {

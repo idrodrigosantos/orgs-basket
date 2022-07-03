@@ -1,18 +1,22 @@
 import React from 'react';
 import { Image, StyleSheet, Dimensions } from 'react-native';
-import CustomText from '../../../components/CustomText';
-import top from '../../../../assets/top.png';
+import { CustomText } from '@/components/CustomText';
+import top from '../../../assets/top.png';
 
 const width = Dimensions.get('screen').width;
 
-export default function Top({ title }) {
+interface TopProps {
+  title: any;
+}
+
+export const Top = ({ title }: TopProps) => {
   return (
     <>
       <Image source={top} style={styles.top} />
       <CustomText style={styles.title}>{title}</CustomText>
     </>
   );
-}
+};
 
 const styles = StyleSheet.create({
   top: {
