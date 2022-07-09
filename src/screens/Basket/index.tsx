@@ -4,10 +4,11 @@ import { Top } from '@/screens/Basket/components/Top';
 import { Details } from '@/screens/Basket/components/Details';
 import { Item } from '@/screens/Basket/components/Item';
 import { CustomText } from '@/components/CustomText';
+import { ITop, IDetails } from '@/screens/Basket/interfaces';
 
 interface BasketProps {
-  top: any;
-  details: any;
+  top: ITop;
+  details: IDetails;
   items: any;
 }
 
