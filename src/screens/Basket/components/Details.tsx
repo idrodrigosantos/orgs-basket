@@ -2,15 +2,7 @@ import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 import { CustomText } from '@/components/CustomText';
 import { CustomButton } from '@/components/CustomButton';
-
-interface DetailsProps {
-  name: any;
-  farmLogo: any;
-  farmName: any;
-  description: any;
-  price: any;
-  button: any;
-}
+import { IDetails } from '@/screens/Basket/interfaces';
 
 export const Details = ({
   name,
@@ -19,7 +11,7 @@ export const Details = ({
   description,
   price,
   button,
-}: DetailsProps) => {
+}: IDetails) => {
   return (
     <>
       <CustomText style={styles.name}>{name}</CustomText>

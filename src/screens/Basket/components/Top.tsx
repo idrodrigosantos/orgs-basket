@@ -2,14 +2,11 @@ import React from 'react';
 import { Image, StyleSheet, Dimensions } from 'react-native';
 import { CustomText } from '@/components/CustomText';
 import top from '../../../assets/top.png';
+import { ITop } from '@/screens/Basket/interfaces';
 
 const width = Dimensions.get('screen').width;
 
-interface TopProps {
-  title: any;
-}
-
-export const Top = ({ title }: TopProps) => {
+export const Top = ({ title }: ITop) => {
   return (
     <>
       <Image source={top} style={styles.top} />
