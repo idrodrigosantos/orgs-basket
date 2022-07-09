@@ -8,16 +8,13 @@ This project implements the organic products e-commerce basket details screen. T
 
 * Source code editor
 * Node.js
-* Yarn or NPM
+* Yarn
 * Git
 * [Expo Go](https://expo.dev/client)
 
 ### Install and Run
 
 ```bash
-# If haven't installed Expo previously. Install Expo globally
-yarn add global expo-cli or npm install --global expo-cli
-
 # Clone project
 git clone https://github.com/idrodrigosantos/orgs-basket.git
 
@@ -25,10 +22,10 @@ git clone https://github.com/idrodrigosantos/orgs-basket.git
 cd orgs-basket
 
 # Install dependencies
-yarn or npm install
+yarn
 
 # Run application
-yarn start or npm start
+yarn start
 ```
 
 ### Test
