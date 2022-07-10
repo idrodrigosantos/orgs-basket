@@ -1,16 +1,17 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
-import CustomText from '../../../components/CustomText';
-import CustomButton from '../../../components/CustomButton';
+import { CustomText } from '@/components/CustomText';
+import { CustomButton } from '@/components/CustomButton';
+import { IDetails } from '@/screens/Basket/interfaces';
 
-export default function Details({
+export const Details = ({
   name,
   farmLogo,
   farmName,
   description,
   price,
   button,
-}) {
+}: IDetails) => {
   return (
     <>
       <CustomText style={styles.name}>{name}</CustomText>
@@ -25,7 +26,7 @@ export default function Details({
       </CustomButton>
     </>
   );
-}
+};
 
 const styles = StyleSheet.create({
   name: {

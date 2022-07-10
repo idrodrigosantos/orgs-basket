@@ -1,11 +1,18 @@
 import React from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
-import Top from './components/Top';
-import Details from './components/Details';
-import Item from './components/Item';
-import CustomText from '../../components/CustomText';
+import { Top } from '@/screens/Basket/components/Top';
+import { Details } from '@/screens/Basket/components/Details';
+import { Item } from '@/screens/Basket/components/Item';
+import { CustomText } from '@/components/CustomText';
+import { ITop, IDetails } from '@/screens/Basket/interfaces';
 
-export default function Basket({ top, details, items }) {
+interface BasketProps {
+  top: ITop;
+  details: IDetails;
+  items: any;
+}
+
+export const Basket = ({ top, details, items }: BasketProps) => {
   return (
     <>
       <FlatList
@@ -26,7 +33,7 @@ export default function Basket({ top, details, items }) {
       />
     </>
   );
-}
+};
 
 const styles = StyleSheet.create({
   title: {

@@ -1,8 +1,18 @@
 import React from 'react';
 import { TouchableOpacity, StyleSheet } from 'react-native';
-import CustomText from './CustomText';
+import { CustomText } from '@/components/CustomText';
 
-export default function CustomButton({ children, style, onPress }) {
+interface CustomButtonProps {
+  children: React.ReactNode;
+  style: any;
+  onPress: any;
+}
+
+export const CustomButton = ({
+  children,
+  style,
+  onPress,
+}: CustomButtonProps) => {
   return (
     <>
       <TouchableOpacity style={[style, styles.button]} onPress={onPress}>
@@ -10,7 +20,7 @@ export default function CustomButton({ children, style, onPress }) {
       </TouchableOpacity>
     </>
   );
-}
+};
 
 const styles = StyleSheet.create({
   button: {

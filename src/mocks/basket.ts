@@ -1,11 +1,11 @@
-import logo from '../../assets/logo.png';
-import tomato from '../../assets/fruits/tomato.png';
-import broccoli from '../../assets/fruits/broccoli.png';
-import potato from '../../assets/fruits/potato.png';
-import cucumber from '../../assets/fruits/cucumber.png';
-import pumpkin from '../../assets/fruits/pumpkin.png';
+import logo from '@/assets/logo.png';
+import tomato from '@/assets/fruits/tomato.png';
+import broccoli from '@/assets/fruits/broccoli.png';
+import potato from '@/assets/fruits/potato.png';
+import cucumber from '@/assets/fruits/cucumber.png';
+import pumpkin from '@/assets/fruits/pumpkin.png';
 
-const basket = {
+export const mockBasket = {
   top: {
     title: 'Detalhe da Cesta',
   },
@@ -44,5 +44,3 @@ const basket = {
     ],
   },
 };
-
-export default basket;
