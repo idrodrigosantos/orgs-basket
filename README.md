@@ -10,6 +10,7 @@ This project implements the organic products e-commerce basket details screen. T
 * Node.js
 * Yarn
 * Git
+* [Expo CLI](https://docs.expo.dev/workflow/expo-cli/)
 * [Expo Go](https://expo.dev/client)
 
 ### Install and Run
@@ -36,4 +37,4 @@ Open Expo Go App on mobile and scan the QR code obtained when running the app. A
 
 * React Native
 * Expo
-* JavaScript
+* TypeScript
